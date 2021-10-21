@@ -1,0 +1,417 @@
+
+
+:root{
+
+    --primary-color:#39BEF0;
+    --secondary-color:#C4E3F4;
+    --hovered-element-color:#0E6DA0;
+    --main-title-color:#003551;
+    --sub-title-color:#D4D4D4;
+    --text-color:#939393;
+    --secondry-button-color:#E3F5FF;
+
+}
+
+/* typography */
+
+@font-face{
+
+    src: url(../fonts/IRANYekanFN.woff2);
+    font-family: Iran-Yekan;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-Thin.woff2);
+    font-family: Iran-Yekan-Thin;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-Medium.woff2);
+    font-family: Iran-yekan-Medium;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-Light.woff2);
+    font-family: Iran-Yekan-Light;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-ExtraBold.woff2);
+    font-family: Iran-Yekan-Extra-Bold;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-ExtraBlack.woff2);
+    font-family: Iran-Yekan-Extra-Black;
+
+}
+
+@font-face{
+
+    src: url(../fonts/IRANYekanFN-Bold.woff2);
+    font-family: Iran-Yekan-Bold;
+
+}
+
+@font-face {
+
+    src: url(../fonts/IRANYekanFN-Black.woff2);
+    font-family: Iran-Yekan-Black;
+
+}
+
+/* reset */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+
+    direction: rtl;
+    font-size: 100%;
+    overflow-x: hidden;
+
+}
+
+ul {
+
+    list-style-type: none;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+/* components */
+
+hr{
+
+    background-color: var(--sub-title-color);
+    opacity: 0.5;
+    border-radius: 10px;
+
+}
+
+.button{
+
+    width: 152px;
+    height: 54px;
+    font-size: 15px;
+    padding: 14px 23px;
+    border-radius: 8px;
+
+}
+
+.primary-button{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 24px;
+    box-shadow: 0 2.5px 7px 0 rgba(57, 190, 240, 0.25);
+
+}
+
+.secondry-button{
+
+    background-color: var(--secondry-button-color);
+    color: var(--primary-color);
+
+}
+
+.title{
+
+    font-family: Iran-Yekan-Bold;
+    color: var(--main-title-color);
+
+}
+
+.title span{
+
+    color: var(--primary-color);
+    font-family: Iran-Yekan-Extra-Bold;
+    position: relative;
+
+}
+
+.title span::after{
+
+    content: " ";
+    width: 130px;
+    height: 15px;
+    background-color: var(--primary-color);
+    opacity: 0.09;
+    position: absolute;
+    right: 0;
+    top: 20px;
+
+}
+
+a.active{
+
+    font-family: Iran-Yekan-Medium;
+    color: var(--main-title-color) !important;
+    position: relative;
+
+}
+
+a.active::after{
+
+    content: " ";
+    width: 18px;
+    height: 2px;
+    top: 25px;
+    right: 50%;
+    transform: translate(50%);
+    position: absolute;
+    background-color: var(--main-title-color);
+
+}
+
+/* style */
+
+body{
+
+    font-family: Iran-Yekan;
+
+}
+
+main{
+
+    max-width: 100%;
+    height: auto;
+    padding: 19px 138px;
+
+}
+
+header {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header nav {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+
+header nav::before{
+
+    position: absolute;
+    top: -15px;
+    right: 50%;
+    width: 80%;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 33px;
+    content: "";
+    transform: translateX(50%);
+
+}
+
+header nav .right-part img{
+
+    width: 152px;
+
+}
+
+header nav .center-part{
+
+    width: 450px;
+
+}
+
+header nav .center-part ul{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header nav .center-part ul li a{
+
+    color: var(--text-color);
+
+}
+
+header nav .center-part ul span {
+
+    color: var(--secondary-color);
+
+}
+
+header nav .left-part {
+
+    display: flex;
+
+}
+
+header nav .left-part .phone-number{
+
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+
+}
+
+header nav .left-part .phone-number .description .text{
+
+    color:var(--hovered-element-color);
+
+}
+
+header nav .left-part .phone-number .description .text span{
+
+    font-family: Iran-Yekan-Bold;
+
+}
+
+header nav .left-part .phone-number .description .text .inner-text{
+
+    font-size: 11px;
+    color: var(--text-color);
+
+}
+
+header nav .left-part .phone-number .icon img{
+
+    width: 24px;
+    height: 24px;
+    margin: 10px 10px 0 0;
+
+}
+
+header nav .left-part .primary-button img{
+
+    width: 16px;
+    
+
+}
+
+header .hero{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+header .hero .hero-top-part{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+
+}
+
+header .hero .hero-top-part .right-part{
+
+    width: 52%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 120px;
+
+}
+
+header .hero .hero-top-part .right-part .title{
+
+    font-size: 25px;
+
+}
+
+header .hero .hero-top-part .right-part .sub-title{
+
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: var(--sub-title-color);
+    font-weight: bold;
+
+}
+
+header .hero .hero-top-part .right-part .description{
+
+    font-size: 14px;
+    text-align: justify;
+    font-family: Iran-Yekan-Medium;
+    color: var(--text-color);
+
+}
+
+header .hero .hero-top-part .right-part .right-part-bottom{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .hero .hero-top-part .right-part .right-part-bottom span{
+
+    width: 174px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    opacity: 0.75;
+
+}
+
+header .hero .hero-top-part .left-part{
+
+    background-image: url(../images/HeroSection/Group\ 160@2x.png);
+    background-size: cover;
+    background-position: -120px 20px;
+    width: 48%;
+
+
+}
+
+header .hero .hero-top-part .left-part img{
+
+    width: 100%;
+    border: 1px solid white;
+
+}
+
+header .hero .hero-bottom-part .bottom-arrow-button{
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondry-button-color);
+    border-radius: 50%;
+    margin: 20px auto;
+
+}
