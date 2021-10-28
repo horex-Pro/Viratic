@@ -9,6 +9,7 @@
     --sub-title-color:#D4D4D4;
     --text-color:#939393;
     --secondry-button-color:#E3F5FF;
+    --cards-color:#F3F3F3;
 
 }
 
@@ -107,16 +108,25 @@ hr{
     background-color: var(--sub-title-color);
     opacity: 0.5;
     border-radius: 10px;
+    margin: 0 138px;
 
 }
 
-.button{
+a.button{
 
     width: 152px;
     height: 54px;
-    font-size: 15px;
+    font-size: 14px;
     padding: 14px 23px;
     border-radius: 8px;
+    font-family: Iran-Yekan-Medium;
+    border: none;
+
+}
+
+.container{
+
+    padding: 19px 138px;
 
 }
 
@@ -146,6 +156,15 @@ hr{
 
 }
 
+.sub-title{
+
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: var(--sub-title-color);
+    font-weight: bold;
+
+}
+
 .title span{
 
     color: var(--primary-color);
@@ -164,6 +183,15 @@ hr{
     position: absolute;
     right: 0;
     top: 20px;
+
+} 
+
+.title-description{
+
+    font-size: 14px;
+    text-align: justify;
+    font-family: Iran-Yekan-Medium;
+    color: var(--text-color);
 
 }
 
@@ -200,7 +228,6 @@ main{
 
     max-width: 100%;
     height: auto;
-    padding: 19px 138px;
 
 }
 
@@ -322,6 +349,8 @@ header .hero{
 
     width: 100%;
     height: 100%;
+    background-image: url(../images/HeroSection/Group\ 160@2x.png);
+    background-repeat: no-repeat;
 
 }
 
@@ -350,24 +379,6 @@ header .hero .hero-top-part .right-part .title{
 
 }
 
-header .hero .hero-top-part .right-part .sub-title{
-
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    color: var(--sub-title-color);
-    font-weight: bold;
-
-}
-
-header .hero .hero-top-part .right-part .description{
-
-    font-size: 14px;
-    text-align: justify;
-    font-family: Iran-Yekan-Medium;
-    color: var(--text-color);
-
-}
-
 header .hero .hero-top-part .right-part .right-part-bottom{
 
     width: 100%;
@@ -388,7 +399,6 @@ header .hero .hero-top-part .right-part .right-part-bottom span{
 
 header .hero .hero-top-part .left-part{
 
-    background-image: url(../images/HeroSection/Group\ 160@2x.png);
     background-size: cover;
     background-position: -120px 20px;
     width: 48%;
@@ -415,3 +425,161 @@ header .hero .hero-bottom-part .bottom-arrow-button{
     margin: 20px auto;
 
 }
+
+.our-service{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+
+}
+
+.our-service .title{
+
+    text-align: center;
+    font-size: 25px;
+    margin-top: 62px;
+
+}
+
+.our-service .line{
+
+    width: 54px;
+    height: 5px;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+
+}
+
+.our-service .line::after {
+
+    width: 27px;
+    height: 5px;
+
+}
+
+.our-service .cards-container{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+
+}
+
+.our-service .cards-container .card{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--cards-color);
+    width: 164px;
+    height: 200px;
+    border-radius: 14px;
+    padding: 20px 10px;
+    border-bottom: 2px solid var(--primary-color);
+
+}
+
+.our-service .cards-container .card.active{
+
+    transform: scale(1.16);
+    background-color: var(--primary-color);   
+
+}
+
+.our-service .cards-container .card.active .inner-card .card-title{
+
+    color: #fff !important;
+
+}
+
+.our-service .cards-container .card.active .inner-card .descritption{
+
+    color: #fff;
+
+}
+
+.our-service .cards-container .card .inner-card{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.our-service .cards-container .card .inner-card .icon{
+
+    width: 48px;
+    height: 48px;
+
+}
+
+.our-service .cards-container .card .inner-card .icon img{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.our-service .cards-container .card .inner-card .card-title{
+
+    font-family: Iran-Yekan-Bold;
+    color: var(--main-title-color);
+    font-size: 16px;
+
+}
+
+.our-service .cards-container .card .inner-card .descritption{
+
+    font-size: 13px;
+    color: var(--text-color);
+    width: 144px;
+    height: 40px;
+
+}
+
+.more-about-team {
+
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/About-Us-Section/Group\ 160@2x.png);
+    background-repeat: no-repeat;
+    background-position: 580px 70px;
+    z-index: -100;
+
+}
+
+.more-about-team .right-part{
+
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.more-about-team .left-part{
+
+    width: 48%;
+
+}
+
+.more-about-team .left-part img{
+
+    width: 100%;
+
+}
+
+
