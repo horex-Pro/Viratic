@@ -216,6 +216,15 @@ a.active::after{
 
 }
 
+.line{
+
+    width: 54px;
+    height: 5px;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+
+}
+
 /* style */
 
 body{
@@ -226,8 +235,10 @@ body{
 
 main{
 
-    max-width: 100%;
+    width: 100%;
+    max-width: 1400px;
     height: auto;
+    margin: 0 auto;
 
 }
 
@@ -348,8 +359,8 @@ header .hero{
 
     width: 100%;
     height: 100%;
-    background-image: url(../images/HeroSection/Group\ 160@2x.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/HeroSection/Hero-BG.png);
+    background-size: cover;
 
 }
 
@@ -440,15 +451,6 @@ header .hero .hero-bottom-part .bottom-arrow-button{
     text-align: center;
     font-size: 25px;
     margin-top: 62px;
-
-}
-
-.our-service .line{
-
-    width: 54px;
-    height: 5px;
-    border-radius: 14px;
-    background-color: var(--secondary-color);
 
 }
 
@@ -551,18 +553,17 @@ header .hero .hero-bottom-part .bottom-arrow-button{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-image: url(../images/About-Us-Section/Group\ 160@2x.png);
+    align-items: flex-start;
+    background-image: url(../images/About-Us-Section/rectangles@2x.png);
     background-repeat: no-repeat;
-    background-position: 580px 70px;
-    z-index: -100;
-
+    background-position: 140% -20px;
+    
 }
 
 .more-about-team .right-part{
 
     width: 45%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -572,6 +573,7 @@ header .hero .hero-bottom-part .bottom-arrow-button{
 .more-about-team .left-part{
 
     width: 48%;
+    margin-top: 30px;
 
 }
 
@@ -581,4 +583,136 @@ header .hero .hero-bottom-part .bottom-arrow-button{
 
 }
 
+.team-member {
 
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    margin-bottom: 150px;
+
+}
+
+.team-member .description{
+
+    width: 570px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.team-member .team-cards{
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.team-member .card {
+
+    width: 372px;
+    height: 296px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 0 0 15px 0 rgba(138, 87, 87, 0.1);
+    padding: 0 30px 37px;
+    overflow: hidden;
+
+}
+
+.team-member .card::before{
+
+    content: "";
+    width: 295px;
+    height: 8px;
+    border-radius: 50px;
+    background-color: var(--secondry-button-color);
+    position: absolute;
+    top: 0;
+    transform: translateY(-40%);
+    
+
+}
+
+.team-member .card:nth-child(2){
+
+    color: #fff;
+    box-shadow: 0 3px 24px 0 rgba(57, 190, 240, 0.3);
+    background-image: linear-gradient(to bottom, #39bef0, #14a0d4);
+
+}
+
+.team-member .card:nth-child(2) .name{
+
+    color: #fff;
+
+}
+
+.team-member .card img{
+
+    width: 88px;
+
+}
+
+.team-member .card .name{
+
+    font-size: 18px;
+    font-family: Iran-Yekan-Bold;
+    color: #303030;
+
+}
+
+.team-member .card .line{
+
+    width: 24px;
+    background-color: #fff;
+
+}
+
+.team-member .card .card-description{
+
+    font-family: Iran-Yekan-Medium;
+    font-size: 14px;
+
+}
+
+.team-member .slider-indicator {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team-member .slider-indicator .right-part{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team-member .slider-indicator .right-part div{
+
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E9E9E9;
+
+}
+
+.team-member .slider-indicator .right-part div.active{
+
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 24px 0 rgba(57, 190, 240, 0.3);
+
+}
